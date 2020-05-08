@@ -1,3 +1,7 @@
+* {
+  box-sizing: border-box;
+}
+
 #imgcontainer {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -7,7 +11,7 @@
 }
 
 #imgcontainer img {
-  width: 55%;
+  width: 50%;
   height: auto;
   border: solid 4px black;
 }
@@ -16,5 +20,36 @@
   text-align: center;
 }
 
+#imgdiv16,
+#imgdiv15,
+#imgdiv14,
+#imgdiv13,
+#imgdiv12,
+#imgdiv11,
+#imgdiv10,
+#imgdiv9,
+#imgdiv8,
+#imgdiv7,
+#imgdiv6,
+#imgdiv5,
+#imgdiv4,
+#imgdiv3,
+#imgdiv2,
+#imgdiv1 {
+  position: relative;
+}
+
 .overlay {
+  margin: 0 auto;
+  position: absolute;
+  width: 50%;
+  height: 100%;
+  top: 0;
+  left: 25%;
+  background: black;
+  opacity: 0.5;
+}
+
+.show {
+  opacity: 0;
 }
